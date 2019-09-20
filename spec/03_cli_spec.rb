@@ -1,6 +1,7 @@
 describe "bin/tictactoe" do
   it 'instantiates an instance of TicTacToe' do
     game = TicTacToe.new
+game.play
     allow($stdout).to receive(:puts)
     allow(game).to receive(:play)
     allow(game).to receive(:gets).and_return("1")
